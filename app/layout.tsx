@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Nunito as FontSans } from 'next/font/google'
 import { Header } from '~/components/layout/header'
+import { Logo } from '~/components/layout/logo'
+import { Sidebar } from '~/components/layout/sidebar'
 import { ThemeProvider } from '~/components/theme-provider'
 import { ThemeToggle } from '~/components/theme-toggle'
 import { cn } from '~/lib/utils'
@@ -39,7 +41,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header>
-            <div>Logo</div>
+            <div className='flex items-center gap-2'><Sidebar /><Logo /></div>
             <div className="ml-auto flex items-center space-x-4">
               <ThemeToggle />
             </div>
