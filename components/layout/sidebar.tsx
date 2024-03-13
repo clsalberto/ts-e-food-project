@@ -1,4 +1,5 @@
 'use client'
+
 import { Beef, ListTree, LucideProps, Menu, Package, ShoppingCart, Store, Truck, Users, Utensils } from "lucide-react"
 import { useRouter } from "next/navigation"
 import { ComponentType } from "react"
@@ -98,7 +99,7 @@ export function Sidebar() {
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon">
-          <Menu className="w-5 h-5" />
+          <Menu className="w-4 h-4" />
         </Button>
       </SheetTrigger>
       <SheetContent close={false} side="left" className="w-64">
@@ -119,7 +120,7 @@ export function Sidebar() {
 
             <CommandItem key={itemKey} value={title} onSelect={() => router.push(route)}>
 
-            <Icon className="mr-2 h-5 w-5" />
+            <Icon className="mr-2 h-4 w-4" />
             <span>{title}</span>
 
           </CommandItem>
